@@ -1,0 +1,74 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    overflow-x: hidden;
+    max-width: 100%;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    width: fit-content;
+    font-family: "inter", sans-serif;
+    background-color: #111;
+    overflow-x: hidden;
+    max-width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .noise-filter {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://i.gifer.com/WmZ0.gif");
+    position: fixed;
+    pointer-events: none;
+    opacity: 0.06;
+    z-index: 99999999;
+    color: #111;
+  }
+  .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .left-link {
+      margin-right: auto; /* Pushes the link to the far left */
+    }
+    
+    .right-menu {
+      justify-self: right/* Pushes the menu to the far right */
+    }
+  div {background-color: transparent;}
+  div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+  }
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {display: inline-block;}
+  ul li:hover {background: #555;}
+  ul li:hover ul {display: block;}
+  ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+  }
+  ul li ul li { 
+    background: #555; 
+    display: block; 
+  }
+  ul li ul li a {display:block !important;} 
+  ul li ul li:hover {background: #666;}
+  
