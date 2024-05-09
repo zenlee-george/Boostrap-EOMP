@@ -7,7 +7,7 @@
   html {
     overflow-x: hidden;
     max-width: 100%;
-    -ms-overflow-style: none; /* IE and Edge */
+    -ms-overflow-style: none;
     scrollbar-width: none;
   }
   body::-webkit-scrollbar {
@@ -21,6 +21,7 @@
     max-width: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    z-index: -1;
   }
   .noise-filter {
     width: 100vw;
@@ -30,21 +31,13 @@
     pointer-events: none;
     opacity: 0.06;
     z-index: 99999999;
-    color: #111;
   }
   .container {
       display: flex;
       justify-content: space-between;
     }
     
-    .left-link {
-      margin-right: auto; /* Pushes the link to the far left */
-    }
-    
-    .right-menu {
-      justify-self: right/* Pushes the menu to the far right */
-    }
-  div {background-color: transparent;}
+  /* div {background-color: transparent;} */
   div a {
     text-decoration: none;
     color: white;
@@ -52,23 +45,65 @@
     padding: 15px;
     display:inline-block;
   }
-  ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
+
+  .nav-item a:hover{
+    background-color: #111;
+    color:white;
   }
-  ul li {display: inline-block;}
-  ul li:hover {background: #555;}
-  ul li:hover ul {display: block;}
-  ul li ul {
-    position: absolute;
-    width: 200px;
-    display: none;
+ .five-pointed-star {
+  margin: 25px 0; 
+  position: relative;
+  display: block;
+  color: #967BB6;
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent; 
+  border-bottom: 35px solid #967BB6; 
+  border-left: 50px solid transparent;
+  transform: scale(0.8) ;
+}
+.five-pointed-star:hover {
+  transform-origin: center; 
+  animation: rotateStar 2s linear infinite;
+}
+
+@keyframes rotateStar {
+  0% {
+    transform: rotate(0deg);
   }
-  ul li ul li { 
-    background: #555; 
-    display: block; 
+  100% {
+    transform: rotate(360deg); 
   }
-  ul li ul li a {display:block !important;} 
-  ul li ul li:hover {background: #666;}
-  
+}
+.five-pointed-star:before {
+  border-bottom: 40px solid #967BB6; 
+  border-left: 15px solid transparent; 
+  border-right: 15px solid transparent; 
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -22.5px; 
+  left: -32.5px; 
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+.five-pointed-star:after {
+  position: absolute;
+  display: block;
+  color: 967BB6;
+  top: 1.5px; 
+  left: -52.5px; 
+  width: 0px;
+  height: 0px;
+  border-right: 50px solid transparent; 
+  border-bottom: 35px solid #967BB6; 
+  border-left: 50px solid transparent; 
+  transform: rotate(-70deg);
+  content: '';
+}
+.static-Z {
+  position: absolute;
+ top: 34px;
+ left: 61px;
+}
