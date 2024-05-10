@@ -17,7 +17,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  display: auto;
 }
 
 .noise-filter {
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
   position: fixed;
   pointer-events: none;
   opacity: 0.06;
-  z-index: 99999999;
+  z-index: 9999999;
 }
 
 /* Navigation Bar */
@@ -60,18 +60,20 @@ nav{
   margin: 25px 0;
   position: relative;
   display: block;
-  color: #967BB6;
+  color: darkslategrey;
   width: 0px;
   height: 0px;
   border-right: 50px solid transparent;
-  border-bottom: 35px solid grey;
+  border-bottom: 35px solid darkslategrey;
   border-left: 50px solid transparent;
   transform: scale(0.8);
+  opacity: 80%;
 }
 
 .five-pointed-star:hover {
   transform-origin: center;
-  animation: rotateStar 2s linear infinite;
+  animation: rotateStar 1.5s linear infinite;
+  
 }
 
 @keyframes rotateStar {
@@ -83,8 +85,9 @@ nav{
   }
 }
 
+
 .five-pointed-star:before {
-  border-bottom: 40px solid grey;
+  border-bottom: 40px solid darkslategrey;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   position: absolute;
@@ -95,21 +98,23 @@ nav{
   display: block;
   content: '';
   transform: rotate(-35deg);
+  opacity: 80%;
 }
 
 .five-pointed-star:after {
   position: absolute;
   display: block;
-  color: #967BB6; /* Corrected color value */
+  color: darkslategrey;
   top: 1.5px;
   left: -52.5px;
   width: 0px;
   height: 0px;
   border-right: 50px solid transparent;
-  border-bottom: 35px solid grey;
+  border-bottom: 35px solid darkslategrey;
   border-left: 50px solid transparent;
   transform: rotate(-70deg);
   content: '';
+  opacity: 80%;
 }
 
 .static-Z {
@@ -117,17 +122,198 @@ nav{
   top: 30px;
   left: 51px;
   color: black;
-  opacity: 50%;
+  z-index: -1;
 }
 
 /* About */
-.section-about {
-  white-space: normal;
-  color: #111;
-  height: 100%;
-  z-index: 99999999;
+.section.about {
+white-space: normal;
+color: black;
+height: 100%;
+z-index: 99999999;
+}
+.me-img {
+background-image:url("https://github.com/zenlee-george/Boostrap-EOMP/Zen Lee George");
+background-size: cover;
+background-position-x: center;
+width: 300px;
+height: 100%;
+z-index: 99999999;
+}
+.personal-details {
+list-style: none;
+width: 100%;
+z-index: 99999999;
 }
 
+.horizontal-hobbies {
+height: 100%;
+z-index: 99999999;
+}
+
+.personal-detail {
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+z-index: 99999999;
+}
+
+.personal-detail:last-of-type {
+margin: 0;
+z-index: 99999999;
+}
+.about-heading {
+margin-left: 8%;
+margin-top: 12%;
+margin-bottom: 5%;
+font-size: clamp(31px, 5vw, 90px);
+font-family: "Roboto", sans-serif;
+font-weight: 200;
+z-index: 99999999;
+}
 .about-text {
-  color: #fff;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 20px;
+font-weight: 200;
+margin-left: 10%;
+margin-right: 8%;
+z-index: 99999999;
+}
+.bio-container {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-family: "Roboto", sans-serif;
+font-size: 20px;
+font-weight: 100;
+color: black;
+padding-right: 5%;
+margin-left: 0;
+z-index: 99999999;
+}
+
+.bio-container p {
+margin-bottom: 40px;
+z-index: 99999999;
+}
+p.skills-heading {
+margin-left: 15%;
+margin-top: 15%;
+margin-bottom: 5%;
+font-family: "Roboto", sans-serif;
+font-weight: 200;
+font-size: clamp(30px, 5vw, 50px);
+z-index: 99999999;
+}
+.soft-skills {
+display: flex;
+flex-direction: row;
+align-content: center;
+font-family: "Roboto", sans-serif;
+margin-left: 50%;
+font-size: clamp(20px, 5vw, 30px);
+font-weight: 100;
+color: #eeeeee;
+z-index: 99999999;
+}
+.soft-skills p {
+text-align: right;
+z-index: 99999999;
+}
+.soft-skills div:last-of-type {
+align-self: center;
+margin-left: 20px;
+text-orientation: mixed;
+writing-mode: vertical-lr;
+z-index: 99999999;
+}
+.soft-skills div:last-of-type::after {
+width: 100%;
+z-index: 99999999;
+}
+.technical {
+margin-left: -50px;
+z-index: 99999999;
+}
+.technical-skills {
+display: flex;
+flex-direction: row;
+align-content: center;
+font-family: "Roboto", sans-serif;
+margin-top: 3%;
+font-size: clamp(20px, 5vw, 30px);
+font-weight: 100;
+color: #eeeeee;
+z-index: 99999999;
+}
+.technical-skills div:first-of-type {
+display: inline-block;
+margin-left: 15%;
+transform: rotate(-90deg);
+z-index: 99999999;
+}
+.technical-skills div:last-of-type {
+margin-left: -75px;
+z-index: 99999999;
+}
+/* Education and Experience */
+.section.work {
+color: #eeeeee;
+height: 100%;
+padding: 0 100px 0 0;
+z-index: 99999999;
+}
+p.education-heading {
+font-size: clamp(35px, 5vw, 90px);
+font-family: "Roboto", sans-serif;
+font-weight: 200;
+margin-top: 12%;
+margin-left: 8%;
+z-index: 99999999;
+}
+.education-content {
+margin-top: 5%;
+margin-left: 26%;
+font-family: "inter", sans-serif;
+max-width: 900px;
+z-index: 99999999;
+}
+.time {
+font-size: 18px;
+font-weight: 100;
+z-index: 99999999;
+}
+.what {
+font-family: "inter", sans-serif;
+font-size: clamp(25px, 5vw, 40px);
+font-weight: 200;
+margin-bottom: 20px;
+z-index: 99999999;
+}
+.description {
+font-family: "inter", sans-serif;
+font-weight: 200;
+font-size: clamp(18px, 5vw, 20px);
+z-index: 99999999;
+}
+.experience-content-container {
+text-align: end;
+z-index: 99999999;
+}
+.experience-heading {
+font-size: clamp(35px, 5vw, 90px);
+font-family: "Roboto", sans-serif;
+font-weight: 200;
+margin-top: 14%;
+margin-right: 2%;
+z-index: 99999999;
+}
+.experience-content {
+margin-top: 5%;
+margin-left: 20%;
+max-width: 900px;
+z-index: 99999999;
 }
