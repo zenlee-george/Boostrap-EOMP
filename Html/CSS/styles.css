@@ -127,6 +127,7 @@ nav{
   color: black;
   z-index: -1;
 }
+/* home */
 
 
 /* About */
@@ -309,3 +310,246 @@ max-width: 900px;
   animation: none;
   opacity: 1;
 }
+
+/* Media query and animation*/
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  div.cursor {
+    display: none;
+  }
+  .home {
+    font-size: 10px;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .home-animation {
+    padding: 10vh;
+  }
+  button.navbutton {
+    font-size: 1em;
+  }
+  .section.about {
+    height: auto;
+  }
+  .about-heading {
+    margin-left: 10px;
+  }
+
+  .bio-container {
+    padding: 0;
+  }
+  .about-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0;
+  }
+  .me-img {
+    margin-top: 40px;
+    height: 400px;
+  }
+  .about p.bio {
+    margin-top: 10%;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+  .about .code-pass {
+    margin-top: 0;
+    margin-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+  }
+  .soft-skills {
+    margin-left: 5%;
+  }
+  .technical-skills {
+    margin-top: 50px;
+  }
+  .section.work {
+    height: auto;
+    padding: 0;
+  }
+  .education-content {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  p.education-heading,
+  p.experience-heading {
+    margin-left: 10px;
+  }
+  p.experience-heading {
+    margin-left: 25%;
+    margin-right: 10px;
+  }
+  .experience-content {
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 18%;
+  }
+  .projects {
+    height: auto;
+  }
+  .projects-heading {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    margin-left: 10px;
+  }
+  .project {
+    align-self: center;
+  }
+  .project-left {
+    margin-left: 0;
+  }
+  .project-right {
+    margin-left: 0;
+  }
+  .home-social {
+    right: 20px;
+    top: 12px;
+  }
+
+  .testimonial-row {
+    flex-direction: column;
+  }
+  .testimonial-container img {
+    margin: 20px 0;
+  }
+  .testimonial-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .testimonial-heading {
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  .author-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .author-container img {
+    margin: 0 0 0 50px;
+  }
+  .testimonial-item div:first-of-type {
+    width: 95%;
+  }
+  .container {
+    height: auto;
+  }
+  .contact-footer {
+    padding: 0;
+  }
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .form {
+    margin-right: 0;
+  }
+  .footer {
+    padding: 1px;
+    height: auto;
+  }
+  .profiles i {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .contact-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  div.testimonial-item {
+    text-align: center;
+    padding: 0;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-head {
+    align-self: flex-start;
+  }
+  #form {
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .myMenu {
+    right: 1%;
+  }
+}
+@media screen and (max-width: 1255px) {
+  .home-social {
+    display: none;
+  }
+
+  input::placeholder {
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .technical-skills div:last-of-type {
+    margin-left: -50px;
+  }
+  .soft-skills {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    justify-content: flex-start;
+  }
+  .nav a {
+    margin-left: 20px;
+  }
+}
+
+@keyframes border-change {
+  0% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 30% 70% 30% 70%/ 30% 70%;
+  }
+  50% {
+    border-radius: 30% 150% 80% 100%/ 50% 80% 100% 120%;
+  }
+  75% {
+    border-radius: 120% 90% 150% 50%/ 150% 60% 150% 50%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+
+@keyframes projectAfterMove {
+  25% {
+    right: 0;
+    left: 100%;
+  }
+  50% {
+    right: 100%;
+    left: 0;
+  }
+  75% {
+    right: 0;
+    left: 0;
+  }
+  100% {
+  }
+}
+
