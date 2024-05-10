@@ -109,3 +109,9 @@
 }
 
 /* About */
+.section-about {
+  white-space: normal;
+  color: #111;
+  height: 100%;
+  z-index: 99999999;
+}
