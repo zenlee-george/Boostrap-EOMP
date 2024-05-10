@@ -136,7 +136,8 @@ color: black;
 height: 100%;
 }
 .me-img {
-background-image:url("https://github.com/zenlee-george/Boostrap-EOMP/Zen Lee George");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  img("/Images/Zen Lee George.JPG");
 background-size: cover;
 background-position-x: center;
 width: 300px;
@@ -209,7 +210,7 @@ font-family: "Roboto", sans-serif;
 margin-left: 50%;
 font-size: clamp(20px, 5vw, 30px);
 font-weight: 100;
-color: #eeeeee;
+color: #111;
 }
 .soft-skills p {
 text-align: right;
@@ -234,7 +235,7 @@ font-family: "Roboto", sans-serif;
 margin-top: 3%;
 font-size: clamp(20px, 5vw, 30px);
 font-weight: 100;
-color: #eeeeee;
+color: #111;
 }
 .technical-skills div:first-of-type {
 display: inline-block;
@@ -246,7 +247,7 @@ margin-left: -75px;
 }
 /* Education and Experience */
 .section.work {
-color: #eeeeee;
+color: #111;
 height: 100%;
 padding: 0 100px 0 0;
 }
@@ -303,11 +304,7 @@ max-width: 900px;
 .fade {
   opacity: 0;
   animation: fade-in 0.5s ease-in-out;
-}
-
-.fade.active {
-  animation: none;
-  opacity: 1;
+  animation-fill-mode: forwards;
 }
 
 /* Media query and animation*/
@@ -551,4 +548,3 @@ max-width: 900px;
   100% {
   }
 }
-
