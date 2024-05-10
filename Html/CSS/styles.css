@@ -58,7 +58,7 @@
   width: 0px;
   height: 0px;
   border-right: 50px solid transparent; 
-  border-bottom: 35px solid #967BB6; 
+  border-bottom: 35px solid grey; 
   border-left: 50px solid transparent;
   transform: scale(0.8) ;
 }
@@ -76,7 +76,7 @@
   }
 }
 .five-pointed-star:before {
-  border-bottom: 40px solid #967BB6; 
+  border-bottom: 40px solid grey; 
   border-left: 15px solid transparent; 
   border-right: 15px solid transparent; 
   position: absolute;
@@ -97,7 +97,7 @@
   width: 0px;
   height: 0px;
   border-right: 50px solid transparent; 
-  border-bottom: 35px solid #967BB6; 
+  border-bottom: 35px solid grey; 
   border-left: 50px solid transparent; 
   transform: rotate(-70deg);
   content: '';
