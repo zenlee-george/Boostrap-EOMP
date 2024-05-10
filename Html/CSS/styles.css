@@ -128,11 +128,22 @@ nav{
   z-index: -1;
 }
 /* home */
+.home {
+  background: #fff;
+  background-attachment: fixed;
+  color: #eeeeee;
+  letter-spacing: 2px;
+  font-size: 15px;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
 
 /* About */
  .section.about {
 white-space: normal;
-color: black;
+color: #111;
 height: 100%;
 }
 .me-img {
