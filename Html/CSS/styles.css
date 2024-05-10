@@ -129,15 +129,27 @@ nav{
 }
 /* home */
 .home {
-  background: #fff;
+  background: #111;
   background-attachment: fixed;
-  color: black;
+  color: #eeeeee;
   letter-spacing: 2px;
   font-size: 15px;
   height: 100vh;
   display: grid;
   justify-content: center;
   align-content: center;
+}
+a {
+  color: #eeeeee;
+}
+.home-social a {
+  text-decoration: none;
+  color: #eeeeee;
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+  font-family: "inter", sans-serif;
+  font-weight: 200;
 }
 
 /* About */
@@ -148,7 +160,7 @@ height: 100%;
 }
 .me-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  img("/Images/Zen Lee George.JPG");
+  url("https://github.com/zenlee-george/hostedimages/Zen Lee George.png");
 background-size: cover;
 background-position-x: center;
 width: 300px;
@@ -320,40 +332,7 @@ max-width: 900px;
 }
 
 /*projects*/
-.projects {
-  height: 100%;
-  color: #eeeeee;
-  margin-bottom: 10px;
-  .project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40vw;
-    min-width: 280px;
-    position: relative;
-    background-position: center;
-    font-family: "Roboto", sans-serif;
-    color: white;
-    padding: 20px 30px;
-    margin: 10px;
-    min-height: 350px;
-  }
-  
-  .project-heading {
-    font-size: clamp(40px, 5vw, 50px);
-    font-weight: 200;
-  }
-  .project-tool {
-    font-weight: 100;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .project-description {
-    font-family: "inter", sans-serif;
-    font-weight: 200;
-    font-size: clamp(20px, 5vw, 22px);
-  }
-}
+
 
 /* Media query and animation*/
 @media screen and (max-width: 900px) {
