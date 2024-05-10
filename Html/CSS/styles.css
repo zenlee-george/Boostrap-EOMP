@@ -4,13 +4,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-html,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
 body {
   overflow-x: hidden;
   max-width: 100%;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: 2px;
   font-family: "inter", sans-serif;
   background-color: #111;
   z-index: -1;
@@ -125,12 +128,12 @@ nav{
   z-index: -1;
 }
 
+
 /* About */
-.section.about {
+ .section.about {
 white-space: normal;
 color: black;
 height: 100%;
-z-index: 99999999;
 }
 .me-img {
 background-image:url("https://github.com/zenlee-george/Boostrap-EOMP/Zen Lee George");
@@ -138,17 +141,14 @@ background-size: cover;
 background-position-x: center;
 width: 300px;
 height: 100%;
-z-index: 99999999;
 }
 .personal-details {
 list-style: none;
 width: 100%;
-z-index: 99999999;
 }
 
 .horizontal-hobbies {
 height: 100%;
-z-index: 99999999;
 }
 
 .personal-detail {
@@ -156,12 +156,10 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 margin-bottom: 20px;
-z-index: 99999999;
 }
 
 .personal-detail:last-of-type {
 margin: 0;
-z-index: 99999999;
 }
 .about-heading {
 margin-left: 8%;
@@ -170,7 +168,6 @@ margin-bottom: 5%;
 font-size: clamp(31px, 5vw, 90px);
 font-family: "Roboto", sans-serif;
 font-weight: 200;
-z-index: 99999999;
 }
 .about-text {
 display: flex;
@@ -180,7 +177,6 @@ padding: 20px;
 font-weight: 200;
 margin-left: 10%;
 margin-right: 8%;
-z-index: 99999999;
 }
 .bio-container {
 display: flex;
@@ -192,12 +188,10 @@ font-weight: 100;
 color: black;
 padding-right: 5%;
 margin-left: 0;
-z-index: 99999999;
 }
 
 .bio-container p {
 margin-bottom: 40px;
-z-index: 99999999;
 }
 p.skills-heading {
 margin-left: 15%;
@@ -206,7 +200,6 @@ margin-bottom: 5%;
 font-family: "Roboto", sans-serif;
 font-weight: 200;
 font-size: clamp(30px, 5vw, 50px);
-z-index: 99999999;
 }
 .soft-skills {
 display: flex;
@@ -217,26 +210,21 @@ margin-left: 50%;
 font-size: clamp(20px, 5vw, 30px);
 font-weight: 100;
 color: #eeeeee;
-z-index: 99999999;
 }
 .soft-skills p {
 text-align: right;
-z-index: 99999999;
 }
 .soft-skills div:last-of-type {
 align-self: center;
 margin-left: 20px;
 text-orientation: mixed;
 writing-mode: vertical-lr;
-z-index: 99999999;
 }
 .soft-skills div:last-of-type::after {
 width: 100%;
-z-index: 99999999;
 }
 .technical {
 margin-left: -50px;
-z-index: 99999999;
 }
 .technical-skills {
 display: flex;
@@ -247,24 +235,20 @@ margin-top: 3%;
 font-size: clamp(20px, 5vw, 30px);
 font-weight: 100;
 color: #eeeeee;
-z-index: 99999999;
 }
 .technical-skills div:first-of-type {
 display: inline-block;
 margin-left: 15%;
 transform: rotate(-90deg);
-z-index: 99999999;
 }
 .technical-skills div:last-of-type {
 margin-left: -75px;
-z-index: 99999999;
 }
-/* Education and Experience */
+ Education and Experience 
 .section.work {
 color: #eeeeee;
 height: 100%;
 padding: 0 100px 0 0;
-z-index: 99999999;
 }
 p.education-heading {
 font-size: clamp(35px, 5vw, 90px);
@@ -272,36 +256,30 @@ font-family: "Roboto", sans-serif;
 font-weight: 200;
 margin-top: 12%;
 margin-left: 8%;
-z-index: 99999999;
 }
 .education-content {
 margin-top: 5%;
 margin-left: 26%;
 font-family: "inter", sans-serif;
 max-width: 900px;
-z-index: 99999999;
 }
 .time {
 font-size: 18px;
 font-weight: 100;
-z-index: 99999999;
 }
 .what {
 font-family: "inter", sans-serif;
 font-size: clamp(25px, 5vw, 40px);
 font-weight: 200;
 margin-bottom: 20px;
-z-index: 99999999;
 }
 .description {
 font-family: "inter", sans-serif;
 font-weight: 200;
 font-size: clamp(18px, 5vw, 20px);
-z-index: 99999999;
 }
 .experience-content-container {
 text-align: end;
-z-index: 99999999;
 }
 .experience-heading {
 font-size: clamp(35px, 5vw, 90px);
@@ -309,11 +287,25 @@ font-family: "Roboto", sans-serif;
 font-weight: 200;
 margin-top: 14%;
 margin-right: 2%;
-z-index: 99999999;
 }
 .experience-content {
 margin-top: 5%;
 margin-left: 20%;
 max-width: 900px;
-z-index: 99999999;
+} 
+
+/* fade */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade {
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.fade.active {
+  animation: none;
+  opacity: 1;
 }
