@@ -244,7 +244,7 @@ transform: rotate(-90deg);
 .technical-skills div:last-of-type {
 margin-left: -75px;
 }
- Education and Experience 
+/* Education and Experience */
 .section.work {
 color: #eeeeee;
 height: 100%;
