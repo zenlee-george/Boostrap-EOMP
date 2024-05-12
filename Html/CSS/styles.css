@@ -446,6 +446,24 @@ max-width: 900px;
   margin-right: 2%;
 }
 
+/*img*/
+.project-image{
+  max-width: fit-content;
+  height: auto;
+}
+.smaller-image {
+  max-width: 400px; 
+  height: auto;
+}
+
+/*Testimonials*/
+.testimonials-heading {
+  font-size: clamp(35px, 5vw, 90px);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 5%;
+  margin-right: 2%;
+}
 /*form*/
 .contact {
   white-space: normal;
