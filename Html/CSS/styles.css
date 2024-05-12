@@ -67,7 +67,7 @@ nav{
   border-bottom: 35px solid darkslategrey;
   border-left: 50px solid transparent;
   transform: scale(0.8);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .five-pointed-star:hover {
@@ -98,7 +98,7 @@ nav{
   display: block;
   content: '';
   transform: rotate(-35deg);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .five-pointed-star:after {
@@ -114,7 +114,7 @@ nav{
   border-left: 50px solid transparent;
   transform: rotate(-70deg);
   content: '';
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .static-Z {
@@ -565,4 +565,16 @@ button:hover::after {
   color: #111;
 }
 
+/*Media querys*/
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px; 
+  }
+  .navbar {
+    flex-direction: column; 
+  }
+  .nav-item a {
+    padding: 10px; 
+  }
+}
 
