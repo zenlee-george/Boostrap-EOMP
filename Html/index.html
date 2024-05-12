@@ -229,24 +229,66 @@
 
   <div h1 id="projects">
 
-  <form action="https://formspree.io/f/moqgyaay" method="POST">
-    <label>
-      Your email:
-      <input type="email" name="email">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
-    <!-- your other form fields go here -->
-    <button type="submit">Send</button>
-  </form>
+    <div class="section contact" id="contact">
+      <div class="email-text fade">
+        <p class="lets">Let's get in touch</p>
+        <p class="email">terblancheronald@gmail.com</p>
+      </div>
+      <div id="form">
+        <form
+          class="form fade"
+          action="https://formspree.io/f/moqgyaay"
+          method="POST"
+        >
+          <div class="contact-info">
+            <label for="name" class="contact-label">Your Name: </label>
+            <input
+              class="contact-input"
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="contact-info">
+            <label class="contact-label" for="email"> Your email: </label>
+            <input
+              class="contact-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="name@domain.com"
+            />
+          </div>
+          <div class="contact-info">
+            <label class="contact-label" for="number">Your Number: </label>
+            <input
+              class="contact-input"
+              type="tel"
+              name="number"
+              id="number"
+              placeholder="012 345 6789"
+            />
+          </div>
+          <div class="contact-info">
+            <label class="contact-label"> Your message: </label>
+            <textarea
+              class="contact-input message"
+              name="message"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <!-- your other form fields go here -->
+
+          <button type="submit" class="send-button">Send</button>
+        </form>
+      </div>
+    </div>
   <!--footer-->
   <div class="footer">
     <p class="copyright">© Copyright of Zen Lee George</p>
-    <div class="profiles">
-      <a href="https://github.com/zenlee-george" target="_blank">
-        <i class="bi bi-github"></i>
       </a>
     </div>
 
