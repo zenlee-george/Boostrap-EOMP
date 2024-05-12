@@ -124,8 +124,8 @@ nav{
   color: black;
   z-index: -1;
 }
-/* home */
-.home {
+/* home  */
+ .home {
   background: #eeeeee;
   background-attachment: fixed;
   color: #111;
@@ -135,28 +135,6 @@ nav{
   display: grid;
   justify-content: center;
   align-content: center;
-}
-a {
-  color: #111;
-}
-.home-social a {
-  text-decoration: none;
-  color: #111;
-  margin-left: 10px;
-  display: inline-block;
-  position: relative;
-  font-family: "inter", sans-serif;
-  font-weight: 200;
-}
-
-.name {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  text-align: left;
-
-  font-family: "inter", sans-serif;
-  font-weight: 200;
 }
 
 /*spinner*/
@@ -256,14 +234,6 @@ a {
 }
 
 /* About */
-.me-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://zenlee-george.github.io/hostedimages/zenleegeorge.JPG");
-  background-size: cover;
-  background-position-x: center;
-  width: 300px;
-  height: 100%;
-}
  .section.about {
 white-space: normal;
 color: #111;
