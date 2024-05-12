@@ -67,7 +67,7 @@ nav{
   border-bottom: 35px solid darkslategrey;
   border-left: 50px solid transparent;
   transform: scale(0.8);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .five-pointed-star:hover {
@@ -98,7 +98,7 @@ nav{
   display: block;
   content: '';
   transform: rotate(-35deg);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .five-pointed-star:after {
@@ -114,7 +114,7 @@ nav{
   border-left: 50px solid transparent;
   transform: rotate(-70deg);
   content: '';
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .static-Z {
@@ -124,8 +124,8 @@ nav{
   color: black;
   z-index: -1;
 }
-/* home */
-.home {
+/* home  */
+ .home {
   background: #eeeeee;
   background-attachment: fixed;
   color: #111;
@@ -135,28 +135,6 @@ nav{
   display: grid;
   justify-content: center;
   align-content: center;
-}
-a {
-  color: #111;
-}
-.home-social a {
-  text-decoration: none;
-  color: #111;
-  margin-left: 10px;
-  display: inline-block;
-  position: relative;
-  font-family: "inter", sans-serif;
-  font-weight: 200;
-}
-
-.name {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  text-align: left;
-
-  font-family: "inter", sans-serif;
-  font-weight: 200;
 }
 
 /*spinner*/
@@ -256,14 +234,6 @@ a {
 }
 
 /* About */
-.me-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("https://zenlee-george.github.io/hostedimages/zenleegeorge.JPG");
-  background-size: cover;
-  background-position-x: center;
-  width: 300px;
-  height: 100%;
-}
  .section.about {
 white-space: normal;
 color: #111;
@@ -445,12 +415,24 @@ max-width: 900px;
   margin-top: 5%;
   margin-right: 2%;
 }
-.carousel-indicators {
-  color: #111;
+
+/*img*/
+.project-image{
+  max-width: fit-content;
+  height: auto;
 }
-.carousel-inner {
-  width: 300px;
-  height: 500px;
+.smaller-image {
+  max-width: 400px; 
+  height: auto;
+}
+
+/*Testimonials*/
+.testimonials-heading {
+  font-size: clamp(35px, 5vw, 90px);
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 5%;
+  margin-right: 2%;
 }
 /*form*/
 .contact {
@@ -583,4 +565,16 @@ button:hover::after {
   color: #111;
 }
 
+/*Media querys*/
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px; 
+  }
+  .navbar {
+    flex-direction: column; 
+  }
+  .nav-item a {
+    padding: 10px; 
+  }
+}
 
